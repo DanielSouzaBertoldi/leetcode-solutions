@@ -7,6 +7,11 @@ You may not modify the values in the list's nodes, only nodes itself may be chan
 Example:
 
 Given 1->2->3->4, you should return the list as 2->1->4->3.
+
+--Results (as of 2020-07-17) :
+
+Runtime: 0 ms (beats 100% of C submissions)
+Memory Usage: 5.4 MB (beats 91.75% of C submissions)
 *******************************************************************************/
 
 #include <stdio.h>
@@ -46,6 +51,8 @@ void printList(ListNode *head) {
     }
 }
 
+
+/* The actual function from the Leet Code challenge. */
 ListNode* swapPairs(ListNode *head) {
     if(head && head->next) {
         ListNode *temp = head->next;
